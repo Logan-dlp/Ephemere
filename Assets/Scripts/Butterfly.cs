@@ -9,15 +9,19 @@ public class Butterfly : MonoBehaviour
     public Vector3 pointingDir;
 
     public ConstantForce forwardForce;
+
+    public void ButterflyEnable(bool _enable)
+    {
+        body.useGravity = _enable;
+        forwardForce.enabled = _enable;
+    }
     // Start is called before the first frame update
     void Start()
     {
+        body = GetComponent<Rigidbody>();
         //forwardForce.force = pointingDir * speed * Time.deltaTime;
         forwardForce.relativeForce = pointingDir * speed * Time.deltaTime;
+        ButterflyEnable(false);
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-    }
+    
 }
