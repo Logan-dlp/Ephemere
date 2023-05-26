@@ -7,14 +7,15 @@ using UnityEngine;
 public class swing_wing : MonoBehaviour
 {
     public Wing wing;
-
     public bool down;
-
     public float angle;
+
+    public Quaternion initRotation;
     // Start is called before the first frame update
     void Start()
     {
         angle = -45;
+        initRotation = transform.rotation;
     }
 
     // Update is called once per frame
