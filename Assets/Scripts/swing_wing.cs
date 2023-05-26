@@ -24,7 +24,6 @@ public class swing_wing : MonoBehaviour
         {
             wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, 500 * wing.dir * Time.deltaTime);
             angle += 500 * Time.deltaTime;
-            print(angle);
         }
         if (!down && angle > -45)
         {

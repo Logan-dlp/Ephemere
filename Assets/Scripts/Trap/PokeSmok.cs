@@ -17,8 +17,10 @@ public class PokeSmok : MonoBehaviour
 
     private void OnTriggerEnter(Collider _other)
     {
-        if (_other.GetComponent<Rigidbody>())
+        
+        if (_other.GetComponent<Butterfly>())
         {
+            print("hey ca va boloss");
             Particule.SetActive(true);
             _other.GetComponent<Rigidbody>().AddExplosionForce(ExplosionForce, transform.position, ExplosionRaduis);
         }

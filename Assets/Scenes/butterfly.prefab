@@ -249,6 +249,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wing: {fileID: 1416940692}
+  down: 0
+  angle: 0
 --- !u!1 &4898411852313403702
 GameObject:
   m_ObjectHideFlags: 0
@@ -442,6 +444,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   wing: {fileID: 1338984474}
+  down: 0
+  angle: 0
 --- !u!1 &7546481862112249367
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,6 +457,7 @@ GameObject:
   - component: {fileID: 6127020307067656560}
   - component: {fileID: 1031041379}
   - component: {fileID: 2000854277}
+  - component: {fileID: 949835440}
   m_Layer: 0
   m_Name: butterfly
   m_TagString: Untagged
@@ -508,8 +513,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 1031041379}
-  speed: 10
+  speed: 200
   pointingDir: {x: 1, y: 0, z: 0}
+  forwardForce: {fileID: 949835440}
+--- !u!75 &949835440
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7546481862112249367}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &9057940252633261236
 GameObject:
   m_ObjectHideFlags: 0
