@@ -1,0 +1,25 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using Vector3 = System.Numerics.Vector3;
+
+public class Wing : MonoBehaviour
+{
+    public UnityEngine.KeyCode keyCode;
+    public Rigidbody body;
+    public float upwardForce;
+    public Transform anchorPoint;
+    public float drag;
+    public int dir;
+    // Start is called before the first frame update
+    
+    void Start()
+    {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        body.transform.rotation = Quaternion.identity;
+    }
+}
