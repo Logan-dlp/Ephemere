@@ -41,11 +41,11 @@ public class GameManager : MonoBehaviour
 
     public void CursorMode(bool _on)
     {
-        if (_on == false)
+        if (!_on)
         {
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
-        }else if (_on == true)
+        }else if (_on)
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
