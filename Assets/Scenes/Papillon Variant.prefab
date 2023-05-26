@@ -260,7 +260,7 @@ GameObject:
   - component: {fileID: 3554247592326779749}
   m_Layer: 0
   m_Name: Papillon Variant
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 9152238085129761424}
-  speed: 200
+  speed: 5
   pointingDir: {x: 0, y: 0, z: 1}
   forwardForce: {fileID: 1424410018076531643}
 --- !u!1 &2656997203423701891
