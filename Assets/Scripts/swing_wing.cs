@@ -19,19 +19,20 @@ public class swing_wing : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         if (down && angle < 0)
         {
-            wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, 500 * wing.dir * Time.deltaTime);
-            angle += 500 * Time.deltaTime;
+            wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, 5 * wing.dir);
+            angle += 5;
         }
         if (!down && angle > -45)
         {
-            wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, -500 * wing.dir * Time.deltaTime);
-            angle -= 500 * Time.deltaTime;
+            wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, -5 * wing.dir);
+            angle -= 5;
+            
         }
-        Vector3 force = new Vector3(0, wing.upwardForce / 2, -wing.upwardForce * wing.dir);
+        Vector3 force = new Vector3(wing.upwardForce * wing.dir, wing.upwardForce / 2, 0);
         if (Input.GetKeyDown(wing.keyCode))
         {
             down = true;
@@ -44,6 +45,7 @@ public class swing_wing : MonoBehaviour
             down = false;
             //wing.butterfly.body.drag -= wing.drag;
         }
+        
     }
     
 }

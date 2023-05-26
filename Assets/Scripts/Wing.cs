@@ -9,17 +9,16 @@ public class Wing : MonoBehaviour
     public Butterfly butterfly;
     public float upwardForce;
     public Transform anchorPoint;
-    public float drag;
     public int dir;
+
     // Start is called before the first frame update
     
     void Start()
     {
-        
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         butterfly.transform.rotation = Quaternion.Inverse(Quaternion.identity);
     }
