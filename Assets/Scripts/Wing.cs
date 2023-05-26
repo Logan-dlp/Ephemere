@@ -6,7 +6,7 @@ using Vector3 = System.Numerics.Vector3;
 public class Wing : MonoBehaviour
 {
     public UnityEngine.KeyCode keyCode;
-    public Rigidbody body;
+    public Butterfly butterfly;
     public float upwardForce;
     public Transform anchorPoint;
     public float drag;
@@ -15,11 +15,12 @@ public class Wing : MonoBehaviour
     
     void Start()
     {
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        body.transform.rotation = Quaternion.identity;
+        butterfly.transform.rotation = Quaternion.Inverse(Quaternion.identity);
     }
 }
