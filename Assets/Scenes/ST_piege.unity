@@ -1659,6 +1659,7 @@ MonoBehaviour:
   MaxTime: 1440
   TimeText: {fileID: 1287459216}
   PressKey: {fileID: 1316157104}
+  butterfly: {fileID: 0}
 --- !u!4 &997652610
 Transform:
   m_ObjectHideFlags: 0
@@ -7917,6 +7918,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 949835440, guid: cb59e24bdc3f3b064941abaf2b9aec4f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1031041379, guid: cb59e24bdc3f3b064941abaf2b9aec4f, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2000854277, guid: cb59e24bdc3f3b064941abaf2b9aec4f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6127020307067656560, guid: cb59e24bdc3f3b064941abaf2b9aec4f,
         type: 3}
       propertyPath: m_RootOrder
@@ -7976,6 +7989,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: butterfly
+      objectReference: {fileID: 0}
+    - target: {fileID: 7546481862112249367, guid: cb59e24bdc3f3b064941abaf2b9aec4f,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb59e24bdc3f3b064941abaf2b9aec4f, type: 3}

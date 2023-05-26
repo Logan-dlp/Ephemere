@@ -12,6 +12,8 @@ public class GameManager : MonoBehaviour
     public Text TimeText;
     public GameObject PressKey;
 
+    [SerializeField] private Butterfly butterfly;
+
     public void DisplayTime(float _timer)
     {
         if (_timer <= 0)
@@ -58,9 +60,15 @@ public class GameManager : MonoBehaviour
             if (Input.anyKey)
             {
                 PressKey.SetActive(false);
+                butterfly.ButterflyEnable(true);
                 StartingGame = true;
             }
         }
+    }
+
+    private void Start()
+    {
+        butterfly = GameObject.FindWithTag("Player").GetComponent<Butterfly>();
     }
 
     private void Update()
