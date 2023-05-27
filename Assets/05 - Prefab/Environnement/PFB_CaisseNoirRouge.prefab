@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 3094059573377444229}
   - component: {fileID: 942582181755084111}
   - component: {fileID: 7587846869454052343}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PFB_CaisseNoirRouge
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

@@ -1,8 +1,10 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.Rendering;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class swing_wing : MonoBehaviour
 {
@@ -34,13 +36,13 @@ public class swing_wing : MonoBehaviour
             angle -= 500 * Time.deltaTime;
         }
         Vector3 force = new Vector3(wing.upwardForce * wing.dir, wing.upwardForce / 3, 0);
-        if (Input.GetKeyDown(wing.keyCode))
+        if (Input.GetKeyDown(wing.keyCode) || Input.GetButtonDown(wing.buttonName))
         {
             down = true;
             wing.butterfly.body.AddForceAtPosition(force, transform.position, ForceMode.VelocityChange);
         }
 
-        if (Input.GetKeyUp(wing.keyCode))
+        if (Input.GetKeyUp(wing.keyCode) || Input.GetButtonUp(wing.buttonName))
         {
             down = false;
         }

@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 8632243979871044543}
   - component: {fileID: 4639903606822718490}
   - component: {fileID: 7458181944743311568}
-  m_Layer: 0
+  - component: {fileID: 6063712882894955979}
+  m_Layer: 7
   m_Name: PFB_Mur
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &6063712882894955979
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8971228210402924805}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1874869111161547915, guid: 82cf525160beab34bb863a380f688bd2, type: 3}

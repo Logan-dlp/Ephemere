@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6287414311576869077}
   - component: {fileID: 8117058044156701727}
   - component: {fileID: 1057791031712293196}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PFB_Sol
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
