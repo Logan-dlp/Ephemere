@@ -11,27 +11,28 @@ public class GameManager : MonoBehaviour
     public float MaxTime = 1440;
     public Text TimeText;
     public GameObject PressKey;
-
+    public float RealTime;
     [SerializeField] private Butterfly butterfly;
 
     public void DisplayTime(float _timer)
     {
-        if (_timer <= 0)
+        if (_timer < 0)
         {
             _timer = 0;
+            butterfly.isAlive = false;
         }
 
         float _hour = Mathf.FloorToInt(_timer / 60);
         float _minute = Mathf.FloorToInt(_timer % 60);
 
-        TimeText.text = string.Format("{0:00}:{1:00}", _hour, _minute);
+        TimeText.text = string.Format("{0:00}h{1:00}", _hour, _minute);
     }
     
     void Timer()
     {
         if (MaxTime >= 0)
         {
-            MaxTime -= (24f / 5f) * Time.deltaTime; // à changer pour pas que la partie dur 24min pcq Agathe veut pas :,(
+            MaxTime -= (24f / RealTime) * Time.deltaTime; // à changer pour pas que la partie dur 24min pcq Agathe veut pas :,(
         }
         else
         {

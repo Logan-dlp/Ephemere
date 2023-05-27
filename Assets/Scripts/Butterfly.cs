@@ -10,7 +10,7 @@ public class Butterfly : MonoBehaviour
     public Vector3 pointingDir;
     public bool isAlive;
     public ConstantForce forwardForce;
-
+    public Material material;
     public void ButterflyEnable(bool _enable)
     {
         body.useGravity = _enable;
@@ -28,6 +28,7 @@ public class Butterfly : MonoBehaviour
         body = GetComponent<Rigidbody>();
         //forwardForce.force = pointingDir * speed * Time.deltaTime;
         ButterflyEnable(false);
+        material.color = Color.clear;
     }
 
     private void OnCollisionEnter(Collision other)

@@ -342,6 +342,7 @@ MonoBehaviour:
   pointingDir: {x: 0, y: 0, z: 1}
   isAlive: 0
   forwardForce: {fileID: 1424410018076531643}
+  material: {fileID: 2100000, guid: 6b474797834e9d745bc4c75f0f0e8e49, type: 2}
 --- !u!1 &2656997203423701891
 GameObject:
   m_ObjectHideFlags: 0
