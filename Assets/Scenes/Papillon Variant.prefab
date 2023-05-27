@@ -58,7 +58,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60.000004
+  field of view: 86
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -237,9 +237,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 914730794197984177}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
@@ -340,6 +340,7 @@ MonoBehaviour:
   body: {fileID: 9152238085129761424}
   speed: 5
   pointingDir: {x: 0, y: 0, z: 1}
+  isAlive: 0
   forwardForce: {fileID: 1424410018076531643}
 --- !u!1 &2656997203423701891
 GameObject:
@@ -584,9 +585,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4546041235123694132}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.0000001
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0

@@ -31,7 +31,7 @@ public class GameManager : MonoBehaviour
     {
         if (MaxTime >= 0)
         {
-            MaxTime -= Time.deltaTime; // à changer pour pas que la partie dur 24min pcq Agathe veut pas :,(
+            MaxTime -= (24f / 5f) * Time.deltaTime; // à changer pour pas que la partie dur 24min pcq Agathe veut pas :,(
         }
         else
         {
