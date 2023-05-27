@@ -4939,6 +4939,7 @@ GameObject:
   - component: {fileID: 1973546729}
   - component: {fileID: 1973546727}
   - component: {fileID: 908013025705596106}
+  - component: {fileID: 6087941355088146185}
   m_Layer: 7
   m_Name: Camera
   m_TagString: Untagged
@@ -5027,7 +5028,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -5050,6 +5051,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6087941355088146185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973546725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b36c139f455dffd2ba25a4a0ad58413, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &914730794197984177
 GameObject:
   m_ObjectHideFlags: 0
@@ -5249,7 +5262,9 @@ Transform:
   m_LocalPosition: {x: 0.00011444092, y: -0.008972168, z: -0.072021484}
   m_LocalScale: {x: 0.178525, y: 0.178525, z: 0.178525}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1120932512}
+  - {fileID: 1378215181}
   m_Father: {fileID: 8084929367308397079}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5580,7 +5595,7 @@ MonoBehaviour:
   speed: 15
   pointingDir: {x: 0, y: 0, z: 1}
   isAlive: 0
-  forwardForce: {fileID: 0}
+  forwardForce: {fileID: 6981960065594356160}
   ButterflyMaterial: {fileID: 2100000, guid: eaf448ccfcff8a24b99a06b59701847e, type: 2}
   material: {fileID: 2100000, guid: 6b474797834e9d745bc4c75f0f0e8e49, type: 2}
 --- !u!1 &7910810732888833755

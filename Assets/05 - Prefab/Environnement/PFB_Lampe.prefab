@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3519172076094813332}
   - component: {fileID: 538540584245525297}
   - component: {fileID: 2350228675347419131}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PFB_Lampe
   m_TagString: Untagged
   m_Icon: {fileID: 0}

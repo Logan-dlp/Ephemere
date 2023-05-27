@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 774127418967067960}
   - component: {fileID: 3268126243492264434}
   - component: {fileID: 8688848661625366121}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PFB_BarilLogo1
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

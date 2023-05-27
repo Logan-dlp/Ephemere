@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9154569777974569522}
   - component: {fileID: 6408455127566622456}
   - component: {fileID: 9002143323760259397}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: "PFB_BarilLogoAvanc\xE9"
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

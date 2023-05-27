@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4413981659588731298}
   - component: {fileID: 1920059181330650472}
   - component: {fileID: 1675694770301774447}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PFB_CaisseBleuRougeOrange
   m_TagString: Obstacle
   m_Icon: {fileID: 0}

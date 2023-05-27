@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 9197575918316410652}
   - component: {fileID: 6359273821232374742}
   - component: {fileID: -7635113685205289168}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: PFB_BarilSimple
   m_TagString: Obstacle
   m_Icon: {fileID: 0}
