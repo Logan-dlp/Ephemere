@@ -25,13 +25,13 @@ public class swing_wing : MonoBehaviour
             return;
         if (down && angle < 0)
         {
-            wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, 10 * wing.dir);
-            angle += 10;
+            wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, 500 * wing.dir * Time.deltaTime);
+            angle += 500 * Time.deltaTime;
         }
         if (!down && angle > -45)
         {
-            wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, -10 * wing.dir);
-            angle -= 10;
+            wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, -500 * wing.dir * Time.deltaTime);
+            angle -= 500 * Time.deltaTime;
         }
         Vector3 force = new Vector3(wing.upwardForce * wing.dir, wing.upwardForce / 3, 0);
         if (Input.GetKeyDown(wing.keyCode))
