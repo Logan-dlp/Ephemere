@@ -5163,7 +5163,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyCode: 275
   butterfly: {fileID: 295201445050627357}
-  upwardForce: 5
+  upwardForce: 6
   anchorPoint: {fileID: 6548934855704869671}
   dir: -1
   buttonName: Fire2
@@ -5461,7 +5461,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   keyCode: 276
   butterfly: {fileID: 295201445050627357}
-  upwardForce: 5
+  upwardForce: 6
   anchorPoint: {fileID: 7008776180237656054}
   dir: 1
   buttonName: Fire1
@@ -5592,7 +5592,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 7345011900616697296}
-  speed: 15
+  speed: 18
   pointingDir: {x: 0, y: 0, z: 1}
   isAlive: 0
   forwardForce: {fileID: 6981960065594356160}
