@@ -10,6 +10,7 @@ public class Wing : MonoBehaviour
     public float upwardForce;
     public Transform anchorPoint;
     public int dir;
+    public string buttonName;
 
     // Start is called before the first frame update
     

@@ -213,6 +213,7 @@ MonoBehaviour:
   upwardForce: 5
   anchorPoint: {fileID: 6548934855704869671}
   dir: -1
+  buttonName: Fire2
 --- !u!114 &5008984084039900082
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -338,7 +339,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   body: {fileID: 9152238085129761424}
-  speed: 5
+  speed: 15
   pointingDir: {x: 0, y: 0, z: 1}
   isAlive: 0
   forwardForce: {fileID: 1424410018076531643}
@@ -355,6 +356,7 @@ GameObject:
   - component: {fileID: 1574922976972916177}
   - component: {fileID: 9003456202624147465}
   - component: {fileID: 1126641798152337613}
+  - component: {fileID: 1471805578}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -428,6 +430,18 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!122 &1471805578
+Halo:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2656997203423701891}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_Size: 100
 --- !u!1 &4236437573058080970
 GameObject:
   m_ObjectHideFlags: 0
@@ -563,6 +577,7 @@ MonoBehaviour:
   upwardForce: 5
   anchorPoint: {fileID: 7008776180237656054}
   dir: 1
+  buttonName: Fire1
 --- !u!114 &3651066390288360251
 MonoBehaviour:
   m_ObjectHideFlags: 0
