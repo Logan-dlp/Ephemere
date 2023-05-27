@@ -10,7 +10,11 @@ public class Butterfly : MonoBehaviour
     public Vector3 pointingDir;
     public bool isAlive;
     public ConstantForce forwardForce;
+    public Material ButterflyMaterial;
 
+    private GameManager gameManager;
+    private float progress = 0;
+    public Material material;
     public void ButterflyEnable(bool _enable)
     {
         body.useGravity = _enable;
@@ -26,8 +30,17 @@ public class Butterfly : MonoBehaviour
     void Start()
     {
         body = GetComponent<Rigidbody>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
         //forwardForce.force = pointingDir * speed * Time.deltaTime;
         ButterflyEnable(false);
+        ButterflyMaterial.SetFloat("_DissolveAmount", 0);
+        material.color = Color.white;
+        
+    }
+
+    private void Update()
+    {
+        Death();
     }
 
     private void OnCollisionEnter(Collision other)
@@ -35,6 +48,21 @@ public class Butterfly : MonoBehaviour
         if (other.collider.CompareTag("Obstacle"))
         {
             this.isAlive = false;
+        }
+    }
+
+    void Death()
+    {
+        if (gameManager.StartingGame == true && isAlive == false)
+        {
+            progress += Time.deltaTime / 2;
+            ButterflyMaterial.SetFloat("_DissolveAmount", Mathf.Lerp(0,1,progress));
+        }
+
+        if (progress >= 1)
+        {
+            material.color = Color.white;
+            Debug.Log("Changement de scene !");
         }
     }
 }
