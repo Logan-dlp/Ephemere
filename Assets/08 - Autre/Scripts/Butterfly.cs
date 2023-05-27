@@ -15,6 +15,7 @@ public class Butterfly : MonoBehaviour
     private GameManager gameManager;
     private float progress = 0;
     public Material material;
+    
     public void ButterflyEnable(bool _enable)
     {
         body.useGravity = _enable;
@@ -62,7 +63,7 @@ public class Butterfly : MonoBehaviour
         if (progress >= 1)
         {
             material.color = Color.white;
-            Debug.Log("Changement de scene !");
+            GameObject.Find("GameManager").GetComponent<SceneLoader>().Loadscene("Lose");
         }
     }
 }
