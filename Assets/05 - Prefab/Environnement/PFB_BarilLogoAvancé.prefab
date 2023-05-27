@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 5234391269899003287}
   - component: {fileID: 9154569777974569522}
   - component: {fileID: 6408455127566622456}
+  - component: {fileID: 9002143323760259397}
   m_Layer: 0
   m_Name: "PFB_BarilLogoAvanc\xE9"
-  m_TagString: Untagged
+  m_TagString: Obstacle
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -83,3 +84,17 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &9002143323760259397
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4895302346026532653}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6876424449039346920, guid: 8487a4a9c3a03f94dbce37e8fd958d17, type: 3}
