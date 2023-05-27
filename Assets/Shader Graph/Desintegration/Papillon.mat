@@ -40,6 +40,10 @@ Material:
         m_Texture: {fileID: 2800000, guid: 569aa17be75f5beb19f85e521cc7bda6, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _EmissiveMap:
+        m_Texture: {fileID: 2800000, guid: 569aa17be75f5beb19f85e521cc7bda6, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _NormalMap:
         m_Texture: {fileID: 2800000, guid: 7d15e65a04fff904eb336b458f020597, type: 3}
         m_Scale: {x: 1, y: 1}
