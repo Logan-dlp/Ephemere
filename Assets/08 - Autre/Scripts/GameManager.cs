@@ -26,7 +26,7 @@ public class GameManager : MonoBehaviour
         float _hour = Mathf.FloorToInt(_timer / 60);
         float _minute = Mathf.FloorToInt(_timer % 60);
 
-        TimeText.text = string.Format("{0:00}h{1:00}", _hour, _minute);
+        TimeText.text = string.Format("{0:00}h{1:00}min", _hour, _minute);
     }
     
     void Timer()

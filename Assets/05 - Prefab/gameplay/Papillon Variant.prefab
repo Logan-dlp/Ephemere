@@ -5249,7 +5249,9 @@ Transform:
   m_LocalPosition: {x: 0.00011444092, y: -0.008972168, z: -0.072021484}
   m_LocalScale: {x: 0.178525, y: 0.178525, z: 0.178525}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1120932512}
+  - {fileID: 1378215181}
   m_Father: {fileID: 8084929367308397079}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5580,7 +5582,7 @@ MonoBehaviour:
   speed: 15
   pointingDir: {x: 0, y: 0, z: 1}
   isAlive: 0
-  forwardForce: {fileID: 0}
+  forwardForce: {fileID: 6981960065594356160}
   ButterflyMaterial: {fileID: 2100000, guid: eaf448ccfcff8a24b99a06b59701847e, type: 2}
   material: {fileID: 2100000, guid: 6b474797834e9d745bc4c75f0f0e8e49, type: 2}
 --- !u!1 &7910810732888833755
