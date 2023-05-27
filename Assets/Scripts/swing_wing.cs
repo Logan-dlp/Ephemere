@@ -38,13 +38,11 @@ public class swing_wing : MonoBehaviour
         {
             down = true;
             wing.butterfly.body.AddForceAtPosition(force, transform.position, ForceMode.VelocityChange);
-            //wing.butterfly.body.drag += wing.drag;
         }
 
         if (Input.GetKeyUp(wing.keyCode))
         {
             down = false;
-            //wing.butterfly.body.drag -= wing.drag;
         }
         
     }

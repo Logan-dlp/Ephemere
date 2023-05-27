@@ -75,13 +75,13 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         Color color = butterfly.material.color;
-        float decrement = -RealTime / MaxTime;
+        float decrement = -.5f / (MaxTime * RealTime * 2f);
         Starting();
         DisplayTime(MaxTime);
-        if (StartingGame == true)
+        if (StartingGame && butterfly.isAlive)
         {
             Timer();
-            butterfly.material.color = new Color(color.r + decrement, color.g + decrement, color.b + decrement, color.a + decrement);
+            //butterfly.material.color = new Color(color.r + decrement, color.g + decrement, color.b + decrement, color.a + decrement);
         }
 
         
