@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[RequireComponent(typeof(SceneLoader))]
 public class GameManager : MonoBehaviour
 {
     [HideInInspector] public bool StartingGame = false;
