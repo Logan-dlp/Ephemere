@@ -19,10 +19,9 @@ public class swing_wing : MonoBehaviour
     }
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        if (!wing.butterfly.isAlive)
-            return;
+
         if (down && angle < 0)
         {
             wing.transform.RotateAround(wing.anchorPoint.position, wing.butterfly.pointingDir, 10 * wing.dir);
