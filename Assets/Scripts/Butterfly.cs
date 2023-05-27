@@ -34,12 +34,13 @@ public class Butterfly : MonoBehaviour
         //forwardForce.force = pointingDir * speed * Time.deltaTime;
         ButterflyEnable(false);
         ButterflyMaterial.SetFloat("_DissolveAmount", 0);
+        material.color = Color.white;
+        
     }
 
     private void Update()
     {
         Death();
-        material.color = Color.clear;
     }
 
     private void OnCollisionEnter(Collision other)
@@ -60,6 +61,7 @@ public class Butterfly : MonoBehaviour
 
         if (progress >= 1)
         {
+            material.color = Color.white;
             Debug.Log("Changement de scene !");
         }
     }

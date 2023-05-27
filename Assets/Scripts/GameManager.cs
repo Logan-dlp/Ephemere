@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
 
     void Starting()
     {
-        if (StartingGame == false)
+        if (!StartingGame)
         {
             PressKey.SetActive(true);
             if (Input.anyKey)
@@ -74,11 +74,16 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        Color color = butterfly.material.color;
+        float decrement = -RealTime / MaxTime;
         Starting();
         DisplayTime(MaxTime);
         if (StartingGame == true)
         {
             Timer();
+            butterfly.material.color = new Color(color.r + decrement, color.g + decrement, color.b + decrement, color.a + decrement);
         }
+
+        
     }
 }

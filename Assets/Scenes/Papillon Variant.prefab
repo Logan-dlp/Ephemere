@@ -343,6 +343,7 @@ MonoBehaviour:
   isAlive: 0
   forwardForce: {fileID: 1424410018076531643}
   ButterflyMaterial: {fileID: 2100000, guid: eaf448ccfcff8a24b99a06b59701847e, type: 2}
+  material: {fileID: 2100000, guid: 6b474797834e9d745bc4c75f0f0e8e49, type: 2}
 --- !u!1 &2656997203423701891
 GameObject:
   m_ObjectHideFlags: 0
