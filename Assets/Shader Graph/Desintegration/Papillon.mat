@@ -66,10 +66,11 @@ Material:
     - _Blend: 0
     - _CastShadows: 1
     - _Cull: 2
-    - _DissolveAmount: 1
+    - _DissolveAmount: 0
     - _DissolveScale: 40
     - _DissolveWidth: 0.02
     - _DstBlend: 0
+    - _EmissiveIntensity: 4.06
     - _Metallic: 0
     - _Normal_Strength: 0.5
     - _QueueControl: 0
