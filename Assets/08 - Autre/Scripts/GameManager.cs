@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,8 +6,13 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
-    public float MaxTime = 100;
+    [HideInInspector] public bool StartingGame = false;
+    
+    public float MaxTime = 1440;
     public Text TimeText;
+    public GameObject PressKey;
+
+    [SerializeField] private Butterfly butterfly;
 
     public void DisplayTime(float _timer)
     {
@@ -43,6 +49,35 @@ public class GameManager : MonoBehaviour
         {
             Cursor.lockState = CursorLockMode.None;
             Cursor.visible = true;
+        }
+    }
+
+    void Starting()
+    {
+        if (StartingGame == false)
+        {
+            PressKey.SetActive(true);
+            if (Input.anyKey)
+            {
+                PressKey.SetActive(false);
+                butterfly.ButterflyEnable(true);
+                StartingGame = true;
+            }
+        }
+    }
+
+    private void Start()
+    {
+        butterfly = GameObject.FindWithTag("Player").GetComponent<Butterfly>();
+    }
+
+    private void Update()
+    {
+        Starting();
+        DisplayTime(MaxTime);
+        if (StartingGame == true)
+        {
+            Timer();
         }
     }
 }
