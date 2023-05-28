@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalGame/Control.unity
     guid: 0b65a48b5f20cb8458c64305751cb688
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/FinalGame/Game.unity
     guid: 7079874a52481af4c9e1847678fb3a78
   - enabled: 1
@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FinalGame/Win.unity
     guid: ee43cd478561d7344bf76597f75a13bb
+  - enabled: 1
+    path: Assets/00 - Scenes/edgar-scene.unity
+    guid: 22871de4973c7c1489aedc603fcd06da
   m_configObjects: {}
